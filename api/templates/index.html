@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jefferson Coqueijo Fidelis</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./static/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="static/images/eu.jpg" alt="Jefferson Coqueijo Fidelis" width="80" class="rounded-circle">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Jefferson Fidelis</h1>
+
+          <p class="title">Full Stack Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:junior.fidelis.3386@gmail.com" class="contact-link">junior.fidelis.3386@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+5583994186006" class="contact-link">+55 (83) 99418-6006</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2002-04-17">Abril 17, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>João Pessoa, Paraiba, BR</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jefferson-fidelis-16bb091b1/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://github.com/FIDEL7Z" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Events</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            <strong> Full Stack Junior - Transformando Ideias em Realidade Tecnológica</strong>
+          </p>
+
+          <p>
+            Olá, sou Jefferson Fidelis, um Programador Full Stack Junior cursando o 4º período de Ciência da Computação na UNIPE. Minha paixão pela programação me impulsiona a criar aplicações inovadoras e sites envolventes.
+          </p>
+          
+          <p>Comprometido em transformar ideias em realidade tecnológica, busco constantemente aprimorar minhas habilidades com as mais recentes tecnologias e boas práticas de programação. Estou ansioso para contribuir positivamente com sua empresa, oferecendo dedicação, paixão pela tecnologia e um compromisso sólido com o crescimento conjunto da equipe.</p>
+
+          <p>Explore meu portfólio e sinta-se à vontade para entrar em contato. Estou animado para discutir como posso agregar valor aos seus projetos. 🚀</p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">O Que Eu Estou Fazendo</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./static/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  O design mais moderno e de alta qualidade realizado profissionalmente.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./static/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Desenvolvimento de sites de alta qualidade no nível profissional.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./static/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Em processo de aprendizado e desenvolvimento profissional de aplicativos para iOS e Android
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./static/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Análise de Dados</h4>
+              
+                <p class="service-item-text">
+                  Experiência em interpretar grandes conjuntos de dados, fornecendo insights valiosos para impulsionar decisões informadas e estratégias eficazes.
+                </p>
+              </div>
+              
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+    <!-- Testimonials Section -->
+<section class="testimonials">
+
+  <h3 class="h3 testimonials-title">Testimonials</h3>
+
+  <!-- Testimonials List -->
+  <ul class="testimonials-list has-scrollbar">
+
+      <!-- Testimonial Item 1 -->
+      <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+              <!-- Testimonials Avatar -->
+              <figure class="testimonials-avatar-box">
+                  <img src="./static/images/caio.png" alt="Caio Henrique" width="60" data-testimonials-avatar>
+              </figure>
+
+              <!-- Testimonials Item Title with Social Links -->
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Caio Henrique 
+                  <ul class="social-list">
+                      <a href="https://www.linkedin.com/in/caiiohenryk/" class="social-link" target="_blank">
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>                            
+                      <a href="https://github.com/caiiohenryk" class="social-link" target="_blank">
+                          <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                  </ul>
+              </h4>
+
+              <!-- Testimonials Text -->
+              <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                      Jefferson é um profissional que não se encontra em qualquer lugar! Esforçado e responsável, ele não descansa até atingir o resultado esperado. Além disso, Jefferson sempre torna o clima da equipe mais leve com seu jeito descontraído de ser. Embora eu conheça muitos desenvolvedores front-end, Jefferson foi quem mudou minha forma de ver a programação! É um prazer trabalhar com este colega.
+                  </p>                 
+              </div>
+          </div>
+      </li>
+
+      <!-- Testimonial Item 2 -->
+      <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+                  <img src="./static/images/freiree.png" alt="freire" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Lucas Freire
+                  <ul class="social-list">
+                      <a href="https://www.linkedin.com/in/lucas-freire-b3b09a236/" class="social-link" target="_blank">
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>                            
+                      <a href="https://github.com/LuccasFreire" class="social-link" target="_blank">
+                          <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                  </ul>
+              </h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                      Jefferson Fidelis é um profissional muito dedicado e trabalhador, estava presente na minha equipe de desenvolvimento e posso atestar que ele é alguém que nunca desiste de suas tarefas, ou as deixa de lado, sempre pede feedback dos seus colegas, como também trabalha em prol do coletivo, passa horas auxiliando a equipe, mesmo em situações fora do âmbito de trabalho, caso seja preciso, e pensando em formas de melhorar o produto que precisa ser entregue ao cliente!
+                  </p>                 
+              </div>
+          </div>
+      </li>
+
+      <!-- Testimonial Item 3 -->
+      <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+                  <img src="./static/images/pedrinn.png" alt="Pedro" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Pedro Henrique 
+                  <ul class="social-list">
+                      <a href="https://www.linkedin.com/in/pedrohaugusto/" class="social-link" target="_blank">
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>                            
+                      <a href="https://github.com/PedroHaugusto" class="social-link" target="_blank">
+                          <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                  </ul>
+              </h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                      Jefferson, foi um prazer ter a oportunidade de participar de um projeto ao lado desse profissional, uma pessoa incrível e um profissional sem igual, dedicado e muito esforçado!
+                  </p>                 
+              </div>
+          </div>
+      </li>
+
+      <!-- Testimonial Item 4 -->
+      <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+                  <img src="./static/images/ian.png" alt="Ian" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Ian Pedro
+                  <ul class="social-list">
+                      <a href="https://www.linkedin.com/in/ian-pedro-1a2426250/" class="social-link" target="_blank">
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>                            
+                      <a href="https://github.com/IanPedr" class="social-link" target="_blank">
+                          <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                  </ul>
+              </h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                      Trabalhar com você é sempre uma experiência incrível. Seu compromisso com a excelência é inspirado, eu sempre aprendo muito com você, seu esforço e dedicação são admiráveis, você é um profissional excepcional. Seu trabalho é sempre exemplar, é um prazer trabalhar com alguém tão talentoso e dedicado como você.
+                  </p>                 
+              </div>
+          </div>
+      </li>
+
+
+    <!-- Testimonial Item 5 -->
+  <li class="testimonials-item">
+  <div class="content-card" data-testimonials-item>
+      <figure class="testimonials-avatar-box">
+          <img src="./static/images/kleison.png" alt="kleisom" width="60" data-testimonials-avatar>
+      </figure>
+      
+      <h4 class="h4 testimonials-item-title" data-testimonials-title>kleison Madruga
+          <ul class="social-list">
+              <a href="https://www.linkedin.com/in/kleyson-madruga/" class="social-link" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+              </a>                            
+              <a href="https://github.com/kleysonfmadruga" class="social-link" target="_blank">
+                  <ion-icon name="logo-github"></ion-icon>
+              </a>
+          </ul>
+       </h4>
+
+        <div class="testimonials-text" data-testimonials-text>
+          <p>
+            Jefferson é o tipo de programador que, na minha opinião, tem muito potencial de crescimento por possuir três características: curiosidade, vontade de aprender e capacidade de "se virar" quando necessário. Já o auxiliei em alguns projetos e, quando algum problema ocorria e eu não podia ajudar, ele mesmo corria atrás e resolvia sozinho. Além disso, ele também é uma pessoa que tem uma energia muito positiva. Acredito que entrando em um time e sendo mentorado por profissionais mais experientes, ele pode alcançar voos muito mais altos.
+            </p>                 
+        </div>
+    </div>
+  </li>
+
+   <!-- Testimonial Item 6 -->
+   <li class="testimonials-item">
+    <div class="content-card" data-testimonials-item>
+        <figure class="testimonials-avatar-box">
+            <img src="./static/images/andre.png" alt="andre" width="60" data-testimonials-avatar>
+        </figure>
+        
+        <h4 class="h4 testimonials-item-title" data-testimonials-title>Andre Gustavo
+            <ul class="social-list">
+                <a href="https://www.linkedin.com/in/andre-gustavo-a07809204/" class="social-link" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>                            
+                <a href="https://github.com/AndreGugaz" class="social-link" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </ul>
+         </h4>
+  
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Em 2022-2023 tive o prazer e honra de cumprir meu contrato como aprendiz na São Braz Indústria e Comércio de Alimentos junto a Jefferson. Um amigo que o destino me colocou e tive orgulho em ensinar e aprender com ele. De todos que passaram por aquele setor, creio que Jefferson teve a maior curva de aprendizado e evolução como pessoa e profissional. Espero um dia novamente estarmos dividindo o mesmo ambiente corporativo e cumprir nossas metas estabelecidas.
+              </p>                 
+          </div>
+      </div>
+    </li>
+
+     <!-- Testimonial Item 7-->
+   <li class="testimonials-item">
+    <div class="content-card" data-testimonials-item>
+        <figure class="testimonials-avatar-box">
+            <img src="./static/images/joaob.png" alt="andre" width="60" data-testimonials-avatar>
+        </figure>
+        
+        <h4 class="h4 testimonials-item-title" data-testimonials-title>João Bosco
+            <ul class="social-list">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-bosco-8205811b7/" class="social-link" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>                            
+                
+            </ul>
+         </h4>
+  
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Gostaria de expressar o quanto foi enriquecedor e gratificante ter tido a oportunidade de trabalhar ao seu lado. Os momentos que compartilhamos durante nosso tempo juntos no trabalho foram verdadeiramente especiais.
+              Além disso, sua capacidade de criar um ambiente de trabalho acolhedor e amigável não passou despercebida. Os dias tornavam-se mais leves e agradáveis com a sua presença, e a colaboração fluía de maneira natural.
+              </p>                 
+          </div>
+      </div>
+    </li>
+
+    
+  </ul>
+
+  </section>
+
+<!-- Testimonials Modal -->
+<div class="modal-container" data-modal-container>
+
+  <div class="overlay" data-overlay></div>
+
+  <section class="testimonials-modal">
+
+      <button class="modal-close-btn" data-modal-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="modal-img-wrapper">
+          <figure class="modal-avatar-box">
+              <img src="./static/images/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+          </figure>
+      </div>
+
+      <div class="modal-content">
+
+          <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+
+          <time datetime="2024-01-8"> 8 jan, 2024</time>
+
+          <div data-modal-text>
+              <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+              </p>
+          </div>
+
+      </div>
+
+  </section>
+
+</div>
+
+
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Companies</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.pm.pb.gov.br/portal/"target="_blank">
+                <img src="./static/images/pm.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.linkedin.com/company/f%C3%A1brica-de-software-unipe/"target="_blank">
+                <img src="./static/images/frabricaaaaaaaaaaa.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.saobraz.com.br/"target="_blank">
+                <img src="./static/images/SAOBRAZ.png" alt="client logo"  >
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://www.unipe.edu.br/wp-content/uploads/2023/02/marcaUnipeFavicon.svg" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Centro Universitário de João Pessoa - UNIPÊ </h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text">
+                Ciencia da Computação
+              </p>
+
+            </li>
+
+            
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Colegio Intensivo </h4>
+
+              <span>2019 — 2021</span>
+
+              <p class="timeline-text">
+                Ensino Medio 
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Aprendiz de TI | São Braz </h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+               
+Ajudar os usuários com problemas de hardware e software, configurar equipamentos e realizar manutenção preventiva em sistemas e dispositivos de tecnologia.
+              </p>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Full-Stack Developer | Fabrica de Software</h4>
+                <span>Set a dez 2023</span>
+                <p class="timeline-text">
+                    Contribuí como desenvolvedor Full Stack na empresa Fabrica de Software, participando ativamente de um projeto em colaboração com a <strong>Polícia Militar de João Pessoa</strong>. Destaco meu papel na criação de uma solução de inteligência artificial para análise de comentários de usuários, utilizando Python, Django, JavaScript, HTML, CSS, Docker, e gerenciando eficientemente as tarefas com o Trello.
+                </p>
+            </li>
+            
+
+            
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MSQL</h5>
+                <data value="70">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Booststrap</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Html &amp; Css</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python &amp; Django</h5>
+                <data value="90">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+<!--
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+-->
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+<!--
+  #star wars
+-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://workshop-frontend-2023-2-xi.vercel.app/ " target="_blank" >
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./static/images/Jedi.PNG" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Star Wars </h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+<!--
+  #noticias
+-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://noticias-cidade-three.vercel.app/"target="_blank" >
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./static/images/noticia.PNG" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Noticia Cidade</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <!--
+              #Spotify
+            -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://spotify-clone-steel-nine.vercel.app/"target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./static/images/print.PNG" alt="Spotify" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Clone do Spotify</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          <!--
+            #Yu-Gi-Oh
+          -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://yu-gi-oh-site.vercel.app/#cartas" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./static/images/cartas.PNG" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Yu Gi Oh </h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <!--
+              #Finans
+            -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://finan-as-gamma.vercel.app/"target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./static/images/finasnsn.PNG" alt="arrival" loading="Finans">
+                </figure>
+
+                <h3 class="project-title">Finans</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <!--
+              #Calculadora
+            -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://app-calculadora-blond.vercel.app/"target="_blank" >
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./static/images/calculadoraaa.PNG" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Calculadora</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            
+            <!--
+              #Mata mosquito 
+            -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://app-mata-mosquito-eight.vercel.app/"target="_blank" >
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./static/images/mosquito.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mata Mosquisto</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+                        <!--
+              # Museu Nacional
+            -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://museu-nacional-i6wn.vercel.app/"target="_blank" >
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./static/images/museu.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Museu Nacional</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+              <!--
+              # Chale
+            -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://vercel.com/fidel7z/chale-hotel"target="_blank" >
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./static/images/chale.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Chale Hotel</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #EVents
+      -->
+
+      <article class="events" data-page="events">
+
+        <header>
+          <h2 class="h2 article-title">Events</h2>
+        </header>
+
+        <section class="events-posts">
+
+          <ul class="events-posts-list">
+
+            <li class="events-post-item">
+              <a href="https://www.linkedin.com/posts/jefferson-fidelis-16bb091b1_inovaaexaeto-tecnologia-impactosocial-activity-7137609327263002624-xzfP?utm_source=share&utm_medium=member_desktop" target="_blank">
+
+                <figure class="events-banner-box">
+                  <img src="./static/images/EntregaPM.jpeg" alt="Foto da entrega" loading="lazy">
+                </figure>
+
+                <div class="events-content">
+
+                  <div class="events-meta">
+                    <p class="events-category"></p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Dez 04, 2022</time>
+                  </div>
+
+                  <h3 class="h3 events-item-title">Entrega PM - 2022</h3>
+
+                  <p class="events-text"> 
+                    Entrega do projeto de Análise de Sentimentos da Polícia Militar
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="events-post-item">
+              <a href="https://www.linkedin.com/posts/caiiohenryk_essa-semana-n%C3%B3s-da-equipe-sensilog-da-f%C3%A1brica-ugcPost-7138307848148627456-Dn_h?utm_source=share&utm_medium=member_desktop" target="_blank">
+
+                <figure class="events-banner-box">
+                  <img src="./static/images/equipeSesilog.jpeg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="events-content">
+
+                  <div class="events-meta">
+                    <p class="events-category"></p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Dez 04, 2022</time>
+                  </div>
+
+                  <h3 class="h3 events-item-title">Team Sensilog</h3>
+
+                  <p class="events-text">
+                    Após 3 meses,  dia 04-12 foi o dia da entrega final do projeto da Fábrica de Software Ubtech UNIPÊ 2023.2 em parceria com a PMJP.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="events-post-item">
+              <a href="https://www.linkedin.com/posts/jefferson-fidelis-16bb091b1_gratidaeto-aprendizado-experiaeanciaincraedvel-activity-7080604581944057857-5332?utm_source=share&utm_medium=member_desktop" target="_blank">
+
+                <figure class="events-banner-box">
+                  <img src="./static/images/SaoBraz.jpeg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="events-content">
+
+                  <div class="events-meta">
+                    <p class="events-category"></p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Jul 04, 2022</time>
+                  </div>
+
+                  <h3 class="h3 events-item-title">São Braz</h3>
+
+                  <p class="events-text">
+                    Último dia na São Braz ao lado dos incríveis colegas da equipe de TI. Momentos inesquecíveis de trabalho em equipe e aprendizado mútuo. Seguimos por caminhos distintos, mas a amizade construída será eterna. 
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contato</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158501.1115508123!2d-34.8725817692568!3d-7.115320371740588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sJo%C3%A3o%20Pessoa%2C%20PB%2C%20Brazil!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus"
+                  width="400" height="300" loading="lazy"></iframe>
+          </figure>
+      </section>
+      
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Formulário de Contato</h3>
+
+          <form action='/send' method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./static/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
