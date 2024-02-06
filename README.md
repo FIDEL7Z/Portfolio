@@ -1,4 +1,4 @@
-# Portfolio de [Seu Nome]
+# Portfolio 
 
 Este é o meu portfólio, onde compartilho projetos e trabalhos que desenvolvi ao longo do tempo. Aqui você encontrará uma variedade de projetos, desde aplicações web até análises de dados.
 
