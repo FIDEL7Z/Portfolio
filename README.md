@@ -7,7 +7,7 @@ Este é o meu portfólio, onde compartilho projetos e trabalhos que desenvolvi a
 
 ( HTML, CSS, JavaScript, Python)
 
-## Dá um check lá: [ https://lnkd.in/dgiVNdS8 ]
+## Dá um check lá: [ https://lnkd.in/dgiVNdS8 ](https://portfolio-swart-omega-50.vercel.app/)]
 
 
 ## Contato
