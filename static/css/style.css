@@ -317,15 +317,17 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
-  overflow: hidden; 
-  width: 100px; 
-  height: 135px; 
+  border-radius: 23px;
+  overflow: hidden;
+  width: 150px;   /* aumentado */
+  height: 230px;  /* aumentado proporcionalmente */
 }
+
 .avatar-box img {
   width: 100%;
-  height: auto;
-  display: block; 
+  height: 100%;
+  object-fit: cover;   /* mantém proporção e preenche o box */
+  display: block;
 }
 .info-content .name {
   color: var(--white-2);
