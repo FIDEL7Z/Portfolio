@@ -84,16 +84,17 @@ const filterFunc = function (selectedValue) {
 
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    } 
+    else if (selectedValue === filterItems[i].dataset.category.toLowerCase()) {
       filterItems[i].classList.add("active");
-    } else {
+    } 
+    else {
       filterItems[i].classList.remove("active");
     }
 
   }
 
 }
-
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
 
