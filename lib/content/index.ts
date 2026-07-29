@@ -2,6 +2,7 @@ import { projects } from "@/lib/content/data/projects.data";
 import { experience, education } from "@/lib/content/data/experience.data";
 import { skills } from "@/lib/content/data/skills.data";
 import { testimonials, companies } from "@/lib/content/data/testimonials.data";
+import { events } from "@/lib/content/data/events.data";
 import { siteConfig } from "@/lib/content/data/site-config.data";
 import type { ProjectCategory } from "@/lib/content/schemas/project.schema";
 import type { SkillCategory } from "@/lib/content/schemas/skill.schema";
@@ -77,4 +78,8 @@ export function getTestimonials() {
 
 export function getCompanies() {
   return companies;
+}
+
+export function getEvents() {
+  return events;
 }
