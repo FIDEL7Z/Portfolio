@@ -16,14 +16,14 @@ export default function EventsPage() {
   const events = getEvents();
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20">
+    <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
       <SectionHeading
         eyebrow="Events"
         title="Career milestones"
         description="Internships wrapping up, projects shipped, teams celebrated — the moments behind the résumé."
       />
 
-      <StaggerList className="mt-10 space-y-6">
+      <StaggerList className="mt-10 grid gap-6 sm:grid-cols-2">
         {events.map((event) => (
           <StaggerItem key={event.slug}>
             <EventCard event={event} />

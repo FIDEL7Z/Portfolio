@@ -14,17 +14,17 @@ function formatDate(value: string) {
 function EventCardBody({ event }: { event: Event }) {
   return (
     <>
-      <div className="relative aspect-video shrink-0 overflow-hidden sm:aspect-auto sm:w-64">
+      <div className="relative aspect-video overflow-hidden">
         <Image
           src={event.image.src}
           alt={event.image.alt}
           fill
-          sizes="(min-width: 640px) 256px, 100vw"
+          sizes="(min-width: 640px) 380px, 100vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </div>
 
-      <div className="flex flex-1 flex-col gap-2 p-6">
+      <div className="flex flex-1 flex-col gap-2 p-5">
         <div className="text-muted-foreground flex flex-wrap items-center gap-2 text-xs">
           {event.tag ? <Badge variant="secondary">{event.tag}</Badge> : null}
           <time dateTime={event.date} className="font-mono">
@@ -48,7 +48,7 @@ function EventCardBody({ event }: { event: Event }) {
 
 export function EventCard({ event }: { event: Event }) {
   const className =
-    "group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow sm:flex-row sm:items-stretch hover:shadow-lg";
+    "group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-lg";
 
   if (event.href) {
     return (

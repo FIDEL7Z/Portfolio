@@ -15,7 +15,7 @@ export function Companies() {
 
       <FadeIn
         delay={0.05}
-        className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 lg:grid-cols-6"
+        className="mt-10 grid grid-cols-2 items-center gap-10 sm:grid-cols-3 lg:grid-cols-6"
       >
         {companies.map((company) => (
           <a
@@ -23,13 +23,13 @@ export function Companies() {
             href={company.href}
             target="_blank"
             rel="noreferrer"
-            className="relative mx-auto flex h-10 w-24 grayscale transition-all hover:grayscale-0"
+            className="relative mx-auto flex h-16 w-full max-w-36 grayscale transition-all hover:grayscale-0"
           >
             <Image
               src={company.logo.src}
               alt={company.logo.alt}
               fill
-              sizes="120px"
+              sizes="180px"
               className="object-contain"
             />
           </a>
