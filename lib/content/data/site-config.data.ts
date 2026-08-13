@@ -31,8 +31,8 @@ const siteConfigData: SiteConfig = {
     "Final-year Computer Science student with a solid foundation in data structures, algorithms, and software engineering practice. Analytical, delivery-oriented, and comfortable owning a problem from architecture through production.",
   ],
   social: {
-    github: "https://github.com/FIDELIZZ",
-    linkedin: "https://www.linkedin.com/in/jefferson-fidelis-19bb093d7/",
+    github: "https://github.com/FIDEL7Z",
+    linkedin: "https://www.linkedin.com/in/fidel7zs",
   },
   resumeHref: "/resume/jefferson-fidelis-resume.pdf",
   stats: [
