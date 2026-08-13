@@ -7,6 +7,23 @@ import {
 
 const experienceData: Experience[] = [
   {
+    company: "Nefex",
+    companySlug: "nefex",
+    role: "Operations Analyst Jr.",
+    location: "Natal, Brazil (Hybrid)",
+    startDate: "2026-05",
+    endDate: null,
+    summary:
+      "Technology operations and internal tooling at Nefex, building automations and integrations that streamline processes and improve operational efficiency.",
+    bullets: [
+      "Work directly in technology operations and process support for the organization.",
+      "Develop and maintain automations and integrations that streamline operational workflows and improve service efficiency.",
+      "Implement internal tools and solutions with a focus on stability, security, and scalability.",
+      "Collaborate with cross-functional teams to identify improvements and propose technology-based solutions.",
+    ],
+    stack: ["Automation", "Integrations", "Internal Tooling"],
+  },
+  {
     company: "Sensilog",
     companySlug: "sensilog",
     role: "Software Engineer (Freelance)",
@@ -26,10 +43,10 @@ const experienceData: Experience[] = [
   {
     company: "Dataprev",
     companySlug: "dataprev",
-    role: "Business Intelligence Analyst",
+    role: "Business Intelligence Analyst (Intern)",
     location: "João Pessoa, Brazil",
-    startDate: "2024-02",
-    endDate: "2026-02",
+    startDate: "2024-04",
+    endDate: "2026-01",
     summary:
       "BI systems development at Brazil's federal social-security data-processing company, focused on data analysis and dashboarding.",
     bullets: [
@@ -61,7 +78,7 @@ const experienceData: Experience[] = [
     companySlug: "fabrica-de-software",
     role: "Full-Stack Developer",
     location: "João Pessoa, Brazil",
-    startDate: "2023-08",
+    startDate: "2023-07",
     endDate: "2023-12",
     summary:
       "Full-stack delivery on a public-sector partnership with the João Pessoa Military Police, building an AI tool for sentiment analysis.",
@@ -77,7 +94,7 @@ const experienceData: Experience[] = [
     companySlug: "sao-braz",
     role: "IT Support Apprentice",
     location: "João Pessoa, Brazil",
-    startDate: "2022-04",
+    startDate: "2022-01",
     endDate: "2023-07",
     summary:
       "First professional role: hands-on IT support and infrastructure maintenance for a large food-industry company.",
@@ -91,6 +108,14 @@ const experienceData: Experience[] = [
 ];
 
 const educationData: Education[] = [
+  {
+    institution: "Centro Universitário de João Pessoa (UNIPÊ)",
+    degree:
+      "Postgraduate Specialization, Software Engineering with Generative AI",
+    startDate: "2026",
+    endDate: null,
+    note: "In progress — Hybrid",
+  },
   {
     institution: "Centro Universitário de João Pessoa (UNIPÊ)",
     degree: "B.Sc. in Computer Science",

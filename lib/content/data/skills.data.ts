@@ -18,9 +18,11 @@ const skillsData: Skill[] = [
   { name: "Python", category: "backend" },
   { name: "Java", category: "backend" },
   { name: "Django", category: "backend" },
+  { name: "Spring Boot", category: "backend" },
 
   // Data
   { name: "PostgreSQL", category: "data" },
+  { name: "MySQL", category: "data" },
   { name: "MongoDB", category: "data" },
   { name: "Redis", category: "data" },
   { name: "Prisma", category: "data" },
@@ -33,12 +35,14 @@ const skillsData: Skill[] = [
   { name: "LangChain", category: "ai" },
   { name: "RAG", category: "ai" },
   { name: "LLMs", category: "ai" },
+  { name: "MCP", category: "ai" },
   { name: "Machine Learning", category: "ai" },
   { name: "Computer Vision", category: "ai" },
 
   // DevOps
   { name: "Docker", category: "devops" },
   { name: "AWS", category: "devops" },
+  { name: "Supabase", category: "devops" },
   { name: "GitHub Actions", category: "devops" },
 ];
 
