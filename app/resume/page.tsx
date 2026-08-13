@@ -44,7 +44,7 @@ export default function ResumePage() {
           className="shrink-0"
         >
           <Download className="size-4" />
-          Download PDF
+          Download Resume
         </Button>
       </FadeIn>
 

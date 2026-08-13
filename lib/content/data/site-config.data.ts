@@ -34,7 +34,7 @@ const siteConfigData: SiteConfig = {
     github: "https://github.com/FIDEL7Z",
     linkedin: "https://www.linkedin.com/in/fidel7zs",
   },
-  resumeHref: "/resume/jefferson-fidelis-resume.pdf",
+  resumeHref: "/resume/jefferson-fidelis-resume.png",
   stats: [
     { label: "Years of experience", value: "4+" },
     { label: "Projects shipped", value: "20+" },
