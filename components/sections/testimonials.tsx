@@ -20,8 +20,8 @@ export function Testimonials() {
     <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
       <FadeIn>
         <SectionHeading
-          eyebrow="Testimonials"
-          title="What colleagues say"
+          eyebrow="Depoimentos"
+          title="O que meus colegas dizem"
           align="center"
         />
       </FadeIn>
@@ -47,7 +47,7 @@ export function Testimonials() {
                   {testimonial.quote}
                 </p>
                 <span className="text-primary mt-auto text-xs font-medium opacity-0 transition-opacity group-hover:opacity-100">
-                  Read full testimonial →
+                  Ler depoimento completo →
                 </span>
               </button>
 

@@ -14,9 +14,9 @@ export function FeaturedWork() {
     <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
       <FadeIn className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <SectionHeading
-          eyebrow="Selected Work"
-          title="Projects worth a closer look"
-          description="A curated set of production and research projects — the full list, including smaller practice builds, lives on the Projects page."
+          eyebrow="Trabalhos Selecionados"
+          title="Projetos que vale a pena conhecer"
+          description="Um conjunto selecionado de projetos de produção e pesquisa — a lista completa, incluindo builds menores de prática, fica na página de Projetos."
         />
         <Button
           variant="outline"
@@ -24,7 +24,7 @@ export function FeaturedWork() {
           render={<Link href="/projects" />}
           className="shrink-0"
         >
-          View all projects
+          Ver todos os projetos
           <ArrowRight className="size-4" />
         </Button>
       </FadeIn>

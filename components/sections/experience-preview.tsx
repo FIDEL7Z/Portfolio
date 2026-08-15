@@ -13,9 +13,9 @@ export function ExperiencePreview() {
     <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
       <FadeIn className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <SectionHeading
-          eyebrow="Experience"
-          title="Where I've shipped"
-          description="Full-stack and AI engineering across a BI-focused federal data company, freelance AI product work, and a competitive front-end scholarship program."
+          eyebrow="Experiência"
+          title="Onde já entreguei"
+          description="Engenharia full-stack e de IA em uma empresa federal de dados focada em BI, trabalho freelance em produtos de IA e um programa competitivo de bolsas em front-end."
         />
         <Button
           variant="outline"
@@ -23,7 +23,7 @@ export function ExperiencePreview() {
           render={<Link href="/resume" />}
           className="shrink-0"
         >
-          Full resume
+          Currículo completo
           <ArrowRight className="size-4" />
         </Button>
       </FadeIn>

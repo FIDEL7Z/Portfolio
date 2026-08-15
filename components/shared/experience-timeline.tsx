@@ -2,10 +2,10 @@ import type { Experience } from "@/lib/content/schemas/experience.schema";
 import { FadeIn } from "@/components/motion/fade-in";
 
 function formatDate(value: string | null) {
-  if (!value) return "Present";
+  if (!value) return "Atual";
   const [year, month] = value.split("-");
   const date = new Date(Number(year), Number(month) - 1);
-  return date.toLocaleDateString("en-US", { month: "short", year: "numeric" });
+  return date.toLocaleDateString("pt-BR", { month: "short", year: "numeric" });
 }
 
 export function ExperienceTimeline({

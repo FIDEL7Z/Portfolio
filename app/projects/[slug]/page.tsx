@@ -37,9 +37,9 @@ export async function generateMetadata({
 }
 
 const categoryLabel = {
-  ai: "Artificial Intelligence",
-  web: "Web Development",
-  application: "Application",
+  ai: "Inteligência Artificial",
+  web: "Desenvolvimento Web",
+  application: "Aplicação",
 } as const;
 
 export default async function ProjectDetailPage({
@@ -63,7 +63,7 @@ export default async function ProjectDetailPage({
         className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1.5 text-sm"
       >
         <ArrowLeft className="size-4" />
-        All projects
+        Todos os projetos
       </Link>
 
       <FadeIn className="mt-6">
@@ -83,7 +83,7 @@ export default async function ProjectDetailPage({
               }
             >
               <GitHubIcon className="size-4" />
-              View code
+              Ver código
             </Button>
           ) : null}
           {liveLink ? (
@@ -93,7 +93,7 @@ export default async function ProjectDetailPage({
                 <a href={liveLink.href} target="_blank" rel="noreferrer" />
               }
             >
-              Live demo
+              Demonstração ao vivo
               <ArrowUpRight className="size-4" />
             </Button>
           ) : null}
@@ -125,21 +125,21 @@ export default async function ProjectDetailPage({
       {caseStudy ? (
         <div className="mt-12 space-y-10">
           <FadeIn>
-            <h2 className="text-xl font-medium">Problem</h2>
+            <h2 className="text-xl font-medium">Problema</h2>
             <p className="text-muted-foreground mt-3 leading-relaxed">
               {caseStudy.problem}
             </p>
           </FadeIn>
 
           <FadeIn>
-            <h2 className="text-xl font-medium">Solution</h2>
+            <h2 className="text-xl font-medium">Solução</h2>
             <p className="text-muted-foreground mt-3 leading-relaxed">
               {caseStudy.solution}
             </p>
           </FadeIn>
 
           <FadeIn>
-            <h2 className="text-xl font-medium">Architecture</h2>
+            <h2 className="text-xl font-medium">Arquitetura</h2>
             <p className="text-muted-foreground mt-3 leading-relaxed">
               {caseStudy.architecture}
             </p>
@@ -147,7 +147,7 @@ export default async function ProjectDetailPage({
 
           {caseStudy.challenges.length > 0 ? (
             <FadeIn>
-              <h2 className="text-xl font-medium">Challenges</h2>
+              <h2 className="text-xl font-medium">Desafios</h2>
               <ul className="mt-3 space-y-2">
                 {caseStudy.challenges.map((item) => (
                   <li
@@ -164,7 +164,7 @@ export default async function ProjectDetailPage({
 
           {caseStudy.learnings.length > 0 ? (
             <FadeIn>
-              <h2 className="text-xl font-medium">Learnings</h2>
+              <h2 className="text-xl font-medium">Aprendizados</h2>
               <ul className="mt-3 space-y-2">
                 {caseStudy.learnings.map((item) => (
                   <li
@@ -207,7 +207,7 @@ export default async function ProjectDetailPage({
             className="group border-border hover:border-primary/40 flex flex-col gap-1 rounded-xl border p-4 transition-colors"
           >
             <span className="text-muted-foreground inline-flex items-center gap-1 text-xs">
-              <ArrowLeft className="size-3.5" /> Previous
+              <ArrowLeft className="size-3.5" /> Anterior
             </span>
             <span className="group-hover:text-primary font-medium">
               {previous.title}
@@ -222,7 +222,7 @@ export default async function ProjectDetailPage({
             className="group border-border hover:border-primary/40 flex flex-col items-end gap-1 rounded-xl border p-4 text-right transition-colors"
           >
             <span className="text-muted-foreground inline-flex items-center gap-1 text-xs">
-              Next <ArrowRight className="size-3.5" />
+              Próximo <ArrowRight className="size-3.5" />
             </span>
             <span className="group-hover:text-primary font-medium">
               {next.title}

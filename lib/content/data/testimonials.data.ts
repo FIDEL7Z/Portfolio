@@ -89,37 +89,40 @@ const companiesData: Company[] = [
   {
     name: "Dataprev",
     href: "https://www.dataprev.gov.br/",
-    logo: { src: "/images/companies/dataprev.png", alt: "Dataprev logo" },
+    logo: { src: "/images/companies/dataprev.png", alt: "Logo da Dataprev" },
   },
   {
     name: "Sensilog",
     href: "https://www.linkedin.com/company/sensilog/",
-    logo: { src: "/images/companies/sensilog.png", alt: "Sensilog logo" },
+    logo: { src: "/images/companies/sensilog.png", alt: "Logo da Sensilog" },
   },
   {
     name: "Compass UOL",
     href: "https://compass.uol/pt/home/",
-    logo: { src: "/images/companies/compass-uol.png", alt: "Compass UOL logo" },
+    logo: {
+      src: "/images/companies/compass-uol.png",
+      alt: "Logo da Compass UOL",
+    },
   },
   {
     name: "Fábrica de Software (UNIPÊ)",
     href: "https://www.linkedin.com/company/f%C3%A1brica-de-software-unipe/",
     logo: {
       src: "/images/companies/fabrica-de-software.png",
-      alt: "Fábrica de Software UNIPÊ logo",
+      alt: "Logo da Fábrica de Software UNIPÊ",
     },
   },
   {
     name: "São Braz",
     href: "https://www.saobraz.com.br/",
-    logo: { src: "/images/companies/sao-braz.png", alt: "São Braz logo" },
+    logo: { src: "/images/companies/sao-braz.png", alt: "Logo da São Braz" },
   },
   {
     name: "Polícia Militar da Paraíba",
     href: "https://www.pm.pb.gov.br/portal/",
     logo: {
       src: "/images/companies/pmpb.png",
-      alt: "Polícia Militar da Paraíba logo",
+      alt: "Logo da Polícia Militar da Paraíba",
     },
   },
 ];

@@ -10,30 +10,30 @@ import { FadeIn } from "@/components/motion/fade-in";
 import { StaggerItem, StaggerList } from "@/components/motion/stagger-list";
 
 export const metadata: Metadata = buildMetadata({
-  title: "AI Lab",
+  title: "Laboratório de IA",
   description:
-    "LLMs, retrieval-augmented generation, and computer vision — engineering projects at the intersection of AI and production software.",
+    "LLMs, retrieval-augmented generation e visão computacional — projetos de engenharia na interseção entre IA e software em produção.",
   path: "/ai",
 });
 
 const pillars = [
   {
     icon: Bot,
-    title: "LLMs & Agents",
+    title: "LLMs & Agentes",
     description:
-      "Multi-agent orchestration with CrewAI, RAG pipelines, and fine-tuning LLMs for domain-specific applications — most recently at Sensilog, building AI features for real client products.",
+      "Orquestração multi-agente com CrewAI, pipelines de RAG e fine-tuning de LLMs para aplicações específicas de domínio — mais recentemente na Sensilog, construindo funcionalidades de IA para produtos reais de clientes.",
   },
   {
     icon: Eye,
-    title: "Computer Vision",
+    title: "Visão Computacional",
     description:
-      "Real-time object detection and gesture-based interaction, built on YOLO, OpenCV, and MediaPipe — from academic research to interactive HCI experiments.",
+      "Detecção de objetos em tempo real e interação baseada em gestos, construída sobre YOLO, OpenCV e MediaPipe — de pesquisa acadêmica a experimentos interativos de HCI.",
   },
   {
     icon: Sparkles,
-    title: "Applied, not academic",
+    title: "Aplicado, não acadêmico",
     description:
-      "Every project here ties back to a concrete interface or workflow. The goal is always a usable system, not a standalone notebook.",
+      "Todo projeto aqui está conectado a uma interface ou fluxo de trabalho concreto. O objetivo é sempre um sistema usável, não um notebook isolado.",
   },
 ];
 
@@ -44,9 +44,9 @@ export default function AIPage() {
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
       <FadeIn>
         <SectionHeading
-          eyebrow="AI Lab"
-          title="Where AI meets production engineering"
-          description="I treat LLMs and computer vision as engineering problems: real interfaces, real constraints, real trade-offs — not isolated experiments in a notebook."
+          eyebrow="Laboratório de IA"
+          title="Onde IA encontra engenharia de produção"
+          description="Trato LLMs e visão computacional como problemas de engenharia: interfaces reais, restrições reais, trade-offs reais — não experimentos isolados em um notebook."
         />
       </FadeIn>
 
@@ -65,10 +65,12 @@ export default function AIPage() {
       </StaggerList>
 
       <FadeIn delay={0.1} className="mt-20">
-        <h2 className="text-xl font-medium">AI & Computer Vision projects</h2>
+        <h2 className="text-xl font-medium">
+          Projetos de IA & Visão Computacional
+        </h2>
         <p className="text-muted-foreground mt-2">
-          Full case studies — problem, architecture, and trade-offs — for each
-          project below.
+          Cases completos — problema, arquitetura e trade-offs — para cada
+          projeto abaixo.
         </p>
       </FadeIn>
 
@@ -86,7 +88,7 @@ export default function AIPage() {
           nativeButton={false}
           render={<Link href="/projects" />}
         >
-          See all projects
+          Ver todos os projetos
           <ArrowRight className="size-4" />
         </Button>
       </FadeIn>

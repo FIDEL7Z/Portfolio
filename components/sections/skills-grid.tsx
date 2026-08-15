@@ -7,9 +7,9 @@ import type { SkillCategory } from "@/lib/content/schemas/skill.schema";
 const categoryLabel: Record<SkillCategory, string> = {
   frontend: "Frontend",
   backend: "Backend",
-  data: "Data & Storage",
-  ai: "AI & Machine Learning",
-  devops: "DevOps & Cloud",
+  data: "Dados & Armazenamento",
+  ai: "IA & Aprendizado de Máquina",
+  devops: "DevOps & Nuvem",
 };
 
 export function SkillsGrid() {
@@ -20,8 +20,8 @@ export function SkillsGrid() {
       <FadeIn>
         <SectionHeading
           eyebrow="Stack"
-          title="Tools I reach for"
-          description="Grouped by area rather than scored with arbitrary percentages — proficiency is better judged from the projects themselves."
+          title="Ferramentas que eu uso"
+          description="Agrupadas por área em vez de pontuadas com percentuais arbitrários — proficiência se avalia melhor pelos próprios projetos."
         />
       </FadeIn>
 

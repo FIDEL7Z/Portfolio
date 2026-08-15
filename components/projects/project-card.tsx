@@ -6,9 +6,9 @@ import { GitHubIcon } from "@/components/layout/social-icons";
 import type { Project } from "@/lib/content/schemas/project.schema";
 
 const categoryLabel: Record<Project["category"], string> = {
-  ai: "Artificial Intelligence",
-  web: "Web Development",
-  application: "Application",
+  ai: "Inteligência Artificial",
+  web: "Desenvolvimento Web",
+  application: "Aplicação",
 };
 
 export function ProjectCard({ project }: { project: Project }) {
@@ -42,7 +42,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 href={githubLink.href}
                 target="_blank"
                 rel="noreferrer"
-                aria-label={`${project.title} on GitHub`}
+                aria-label={`${project.title} no GitHub`}
                 className="hover:text-foreground transition-colors"
               >
                 <GitHubIcon className="size-4" />
@@ -53,7 +53,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 href={liveLink.href}
                 target="_blank"
                 rel="noreferrer"
-                aria-label={`${project.title} live demo`}
+                aria-label={`${project.title} demonstração ao vivo`}
                 className="hover:text-foreground transition-colors"
               >
                 <ArrowUpRight className="size-4" />

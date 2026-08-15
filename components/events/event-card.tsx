@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import type { Event } from "@/lib/content/schemas/event.schema";
 
 function formatDate(value: string) {
-  return new Date(`${value}T00:00:00`).toLocaleDateString("en-US", {
+  return new Date(`${value}T00:00:00`).toLocaleDateString("pt-BR", {
     month: "short",
     day: "numeric",
     year: "numeric",
@@ -37,7 +37,7 @@ function EventCardBody({ event }: { event: Event }) {
 
         {event.href ? (
           <span className="text-primary mt-auto inline-flex items-center gap-1 pt-2 text-xs font-medium opacity-0 transition-opacity group-hover:opacity-100">
-            View post
+            Ver publicação
             <ArrowUpRight className="size-3.5" />
           </span>
         ) : null}

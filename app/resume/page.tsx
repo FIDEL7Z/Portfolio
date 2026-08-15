@@ -16,17 +16,17 @@ import { FadeIn } from "@/components/motion/fade-in";
 import type { SkillCategory } from "@/lib/content/schemas/skill.schema";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Resume",
-  description: `${siteConfig.name}'s experience, education, and technical skills.`,
+  title: "Currículo",
+  description: `Experiência, formação e habilidades técnicas de ${siteConfig.name}.`,
   path: "/resume",
 });
 
 const categoryLabel: Record<SkillCategory, string> = {
   frontend: "Frontend",
   backend: "Backend",
-  data: "Data & Storage",
-  ai: "AI & Machine Learning",
-  devops: "DevOps & Cloud",
+  data: "Dados & Armazenamento",
+  ai: "IA & Aprendizado de Máquina",
+  devops: "DevOps & Nuvem",
 };
 
 export default function ResumePage() {
@@ -37,34 +37,34 @@ export default function ResumePage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
       <FadeIn className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <SectionHeading eyebrow="Resume" title="Experience & education" />
+        <SectionHeading eyebrow="Currículo" title="Experiência e formação" />
         <Button
           nativeButton={false}
           render={<a href={siteConfig.resumeHref} download />}
           className="shrink-0"
         >
           <Download className="size-4" />
-          Download Resume
+          Baixar Currículo
         </Button>
       </FadeIn>
 
       <section className="mt-14">
         <h2 className="text-muted-foreground mb-8 font-mono text-sm font-medium">
-          Experience
+          Experiência
         </h2>
         <ExperienceTimeline items={experience} />
       </section>
 
       <section className="mt-16">
         <h2 className="text-muted-foreground mb-8 font-mono text-sm font-medium">
-          Education
+          Formação
         </h2>
         <EducationList items={education} />
       </section>
 
       <section className="mt-16">
         <h2 className="text-muted-foreground mb-8 font-mono text-sm font-medium">
-          Skills
+          Habilidades
         </h2>
         <div className="grid gap-6 sm:grid-cols-2">
           {skillGroups.map(({ category, skills }) => (

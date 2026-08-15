@@ -17,14 +17,15 @@ const projectsData: ProjectInput[] = [
   // ---------------------------------------------------------------------
   {
     slug: "vision-based-drawing-system",
-    title: "Vision-Based Drawing System",
-    tagline: "Touchless, gesture-based drawing using real-time hand tracking.",
+    title: "Sistema de Desenho por Visão Computacional",
+    tagline:
+      "Desenho sem contato por gestos, usando rastreamento de mãos em tempo real.",
     category: "ai",
     featured: true,
     year: 2025,
     cover: {
       src: "/images/projects/vision-based-drawing-system.gif",
-      alt: "Hand-tracking drawing system rendering a line on screen as a finger moves in front of the camera",
+      alt: "Sistema de desenho por rastreamento de mãos desenhando uma linha na tela conforme o dedo se move na frente da câmera",
     },
     stack: ["Python", "OpenCV", "MediaPipe", "NumPy"],
     links: [
@@ -35,38 +36,38 @@ const projectsData: ProjectInput[] = [
       },
     ],
     summary:
-      "A real-time, contactless drawing application: hand-gesture tracking via MediaPipe drives drawing, color selection, and erasing on a live video feed.",
+      "Uma aplicação de desenho em tempo real e sem contato: o rastreamento de gestos das mãos via MediaPipe controla o desenho, a seleção de cores e o apagador sobre um feed de vídeo ao vivo.",
     caseStudy: {
       problem:
-        "Traditional drawing tools require dedicated input hardware. The goal was to test whether a webcam alone could support a natural, contactless drawing interface — useful both as an HCI experiment and as an accessibility-oriented interaction model.",
+        "Ferramentas de desenho tradicionais exigem hardware de entrada dedicado. O objetivo era testar se apenas uma webcam poderia suportar uma interface de desenho natural e sem contato — útil tanto como experimento de IHC (Interação Humano-Computador) quanto como modelo de interação voltado à acessibilidade.",
       solution:
-        "A real-time hand-tracking pipeline that maps finger count and fingertip position to drawing actions: one finger draws, two-to-four fingers switch color, and an open hand triggers the eraser — all composited live over the camera feed.",
+        "Um pipeline de rastreamento de mãos em tempo real que mapeia a contagem de dedos e a posição da ponta dos dedos para ações de desenho: um dedo desenha, de dois a quatro dedos trocam a cor, e a mão aberta aciona o apagador — tudo composto ao vivo sobre o feed da câmera.",
       architecture:
-        "MediaPipe Hands detects 21 hand landmarks per frame; a lightweight gesture classifier derived from landmark positions determines the active tool (draw / select color / erase); OpenCV composites the drawing layer onto the live video feed via NumPy array operations, frame by frame.",
+        "O MediaPipe Hands detecta 21 pontos de referência da mão por quadro; um classificador de gestos leve, derivado das posições desses pontos, determina a ferramenta ativa (desenhar / selecionar cor / apagar); o OpenCV compõe a camada de desenho sobre o feed de vídeo ao vivo por meio de operações com arrays do NumPy, quadro a quadro.",
       challenges: [
-        "Keeping gesture classification stable under variable lighting conditions",
-        "Reducing jitter in the drawn line caused by frame-to-frame hand-tracking noise",
-        "Mapping continuous hand position to a responsive, low-latency drawing experience",
+        "Manter a classificação de gestos estável sob condições de iluminação variáveis",
+        "Reduzir a trepidação na linha desenhada causada por ruído no rastreamento das mãos entre quadros",
+        "Mapear a posição contínua da mão para uma experiência de desenho responsiva e de baixa latência",
       ],
       learnings: [
-        "Hands-on experience with real-time computer-vision pipelines, beyond static image inference",
-        "How much classic CV pre/post-processing (smoothing, thresholds) still matters alongside ML models",
-        "HCI trade-offs in designing a gesture vocabulary that feels intuitive without an on-screen tutorial",
+        "Experiência prática com pipelines de visão computacional em tempo real, além da inferência em imagens estáticas",
+        "O quanto o pré e pós-processamento clássico de visão computacional (suavização, limiares) ainda importa junto a modelos de ML",
+        "Os trade-offs de IHC ao projetar um vocabulário de gestos que pareça intuitivo sem um tutorial na tela",
       ],
       gallery: [],
     },
   },
   {
     slug: "realtime-object-detection",
-    title: "Real-Time Object Detection",
+    title: "Detecção de Objetos em Tempo Real",
     tagline:
-      "Real-time object and person detection with YOLOv4-Tiny on Darknet.",
+      "Detecção de objetos e pessoas em tempo real com YOLOv4-Tiny sobre o Darknet.",
     category: "ai",
     featured: true,
     year: 2024,
     cover: {
       src: "/images/projects/realtime-object-detection.gif",
-      alt: "Live video feed with bounding boxes, class labels, and confidence scores drawn around detected objects and people",
+      alt: "Feed de vídeo ao vivo com caixas delimitadoras, rótulos de classe e pontuações de confiança desenhados ao redor de objetos e pessoas detectados",
     },
     stack: ["Python", "Darknet", "YOLOv4-Tiny", "OpenCV"],
     links: [
@@ -77,38 +78,38 @@ const projectsData: ProjectInput[] = [
       },
     ],
     summary:
-      "An academic computer-vision project: real-time object and person detection using YOLOv4-Tiny on Darknet, trained against COCO classes.",
+      "Um projeto acadêmico de visão computacional: detecção de objetos e pessoas em tempo real usando YOLOv4-Tiny sobre o Darknet, treinado com as classes do COCO.",
     caseStudy: {
       problem:
-        "Academic exploration of real-time computer vision: could a lightweight detection model identify objects and people in a live video stream fast enough to be practically useful, without requiring a GPU-only production pipeline?",
+        "Exploração acadêmica de visão computacional em tempo real: um modelo de detecção leve conseguiria identificar objetos e pessoas em um stream de vídeo ao vivo com rapidez suficiente para ser útil na prática, sem exigir um pipeline de produção dependente de GPU?",
       solution:
-        "A real-time detection pipeline using YOLOv4-Tiny on the Darknet framework, configured against the COCO dataset, drawing bounding boxes with class labels and confidence scores over a live video feed via OpenCV.",
+        "Um pipeline de detecção em tempo real usando YOLOv4-Tiny sobre o framework Darknet, configurado com o dataset COCO, desenhando caixas delimitadoras com rótulos de classe e pontuações de confiança sobre um feed de vídeo ao vivo via OpenCV.",
       architecture:
-        "Darknet loads the YOLOv4-Tiny configuration and pre-trained weights; OpenCV handles video capture, frame preprocessing, and rendering of detection overlays (bounding boxes, class names, confidence scores) back onto each frame.",
+        "O Darknet carrega a configuração do YOLOv4-Tiny e os pesos pré-treinados; o OpenCV cuida da captura de vídeo, do pré-processamento dos quadros e da renderização das sobreposições de detecção (caixas delimitadoras, nomes de classe, pontuações de confiança) de volta em cada quadro.",
       challenges: [
-        "Balancing inference speed against detection accuracy by choosing the -Tiny model variant",
-        "Tuning confidence thresholds to reduce false positives on a live camera feed",
-        "Working within Darknet's configuration-driven workflow rather than a Python-native training loop",
+        "Equilibrar velocidade de inferência e precisão de detecção ao escolher a variante -Tiny do modelo",
+        "Ajustar os limiares de confiança para reduzir falsos positivos em um feed de câmera ao vivo",
+        "Trabalhar dentro do fluxo orientado a configuração do Darknet, em vez de um loop de treinamento nativo em Python",
       ],
       learnings: [
-        "Hands-on understanding of one-stage detector trade-offs (speed vs. accuracy)",
-        "How model-size choice (Tiny vs. full YOLOv4) directly impacts real-time feasibility",
-        "Practical experience with the classic Darknet/OpenCV computer-vision stack",
+        "Entendimento prático dos trade-offs de detectores de estágio único (velocidade vs. precisão)",
+        "Como a escolha do tamanho do modelo (Tiny vs. YOLOv4 completo) impacta diretamente a viabilidade em tempo real",
+        "Experiência prática com o stack clássico de visão computacional Darknet/OpenCV",
       ],
       gallery: [],
     },
   },
   {
     slug: "travel-planner-crewai",
-    title: "Travel Planner — CrewAI",
+    title: "Planejador de Viagens — CrewAI",
     tagline:
-      "Multi-agent LLM orchestration that plans a trip itinerary and budget end to end.",
+      "Orquestração multiagente de LLMs que planeja um itinerário de viagem e orçamento de ponta a ponta.",
     category: "ai",
     featured: true,
     year: 2025,
     cover: {
       src: "/images/projects/travel-planner-crewai.gif",
-      alt: "Terminal output showing a CrewAI multi-agent run generating a travel itinerary and budget breakdown",
+      alt: "Saída de terminal mostrando uma execução multiagente do CrewAI gerando um itinerário de viagem e a divisão do orçamento",
     },
     stack: ["Python", "CrewAI", "LLMs", "python-dotenv"],
     links: [
@@ -119,23 +120,23 @@ const projectsData: ProjectInput[] = [
       },
     ],
     summary:
-      "A CrewAI multi-agent system where one agent builds a detailed trip itinerary and a second consolidates the budget from it — a coordinated workflow, not a single-shot prompt.",
+      "Um sistema multiagente com CrewAI em que um agente monta um itinerário de viagem detalhado e um segundo consolida o orçamento a partir dele — um fluxo de trabalho coordenado, não um prompt único.",
     caseStudy: {
       problem:
-        "Planning a trip end to end (itinerary and budget together) is a multi-step reasoning task that doesn't fit neatly into a single LLM prompt — it needed a workflow, not just a chatbot.",
+        "Planejar uma viagem de ponta a ponta (itinerário e orçamento juntos) é uma tarefa de raciocínio em várias etapas que não se encaixa bem em um único prompt de LLM — era necessário um fluxo de trabalho, não apenas um chatbot.",
       solution:
-        "A CrewAI-based system where a Travel Planner agent produces a detailed itinerary (destinations, activities, transportation) and a Budget agent consumes that itinerary to consolidate cost estimates across categories, delivering one coherent, organized trip plan.",
+        "Um sistema baseado em CrewAI em que um agente Travel Planner produz um itinerário detalhado (destinos, atividades, transporte) e um agente Budget consome esse itinerário para consolidar estimativas de custo por categoria, entregando um plano de viagem coerente e organizado.",
       architecture:
-        "CrewAI orchestrates a sequential process: the Travel Planner agent runs first, and its structured output becomes the input for the Budget agent — so budget calculations are always grounded in the actual generated itinerary rather than estimated independently.",
+        "O CrewAI orquestra um processo sequencial: o agente Travel Planner é executado primeiro, e sua saída estruturada se torna a entrada do agente Budget — assim, os cálculos de orçamento sempre se baseiam no itinerário efetivamente gerado, em vez de serem estimados de forma independente.",
       challenges: [
-        "Designing agent roles and task boundaries so outputs compose cleanly instead of duplicating work",
-        "Getting consistent, structured output from an LLM agent that a downstream agent can reliably parse",
-        "Keeping the system provider-agnostic enough to swap the underlying LLM backend",
+        "Projetar papéis de agente e limites de tarefa para que as saídas se combinem de forma limpa, sem duplicar trabalho",
+        "Obter uma saída consistente e estruturada de um agente LLM que outro agente, mais adiante no fluxo, consiga interpretar com confiabilidade",
+        "Manter o sistema suficientemente agnóstico de provedor para permitir trocar o backend de LLM subjacente",
       ],
       learnings: [
-        "Practical experience with multi-agent orchestration patterns beyond single-prompt LLM usage",
-        "How sequential agent dependencies simplify reasoning about a pipeline's correctness",
-        "Designing for extensibility — the repo is structured as a reusable blueprint for further integrations",
+        "Experiência prática com padrões de orquestração multiagente, além do uso de LLM em prompt único",
+        "Como dependências sequenciais entre agentes simplificam o raciocínio sobre a corretude de um pipeline",
+        "Projetar visando extensibilidade — o repositório é estruturado como um modelo reutilizável para futuras integrações",
       ],
       gallery: [],
     },
@@ -143,38 +144,38 @@ const projectsData: ProjectInput[] = [
   {
     slug: "gitperfil",
     title: "GitPerfil",
-    tagline: "A fast, focused GitHub profile explorer.",
+    tagline: "Um explorador de perfis do GitHub rápido e focado.",
     category: "web",
     featured: true,
     year: 2023,
     cover: {
       src: "/images/projects/gitperfil.png",
-      alt: "GitPerfil search interface for looking up a GitHub user's public profile",
+      alt: "Interface de busca do GitPerfil para consultar o perfil público de um usuário do GitHub",
     },
     stack: ["React", "GitHub REST API"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://gitperfil-fidel7zs-projects.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A single search-driven interface that queries the public GitHub API for a username and surfaces the profile and repository data in one clean view.",
+      "Uma interface única, orientada por busca, que consulta a API pública do GitHub por um nome de usuário e exibe os dados de perfil e repositórios em uma visão limpa e única.",
     caseStudy: {
       problem:
-        "Looking up a GitHub user's public profile, repositories, and stats usually means several manual clicks through the GitHub web UI.",
+        "Consultar o perfil público, os repositórios e as estatísticas de um usuário do GitHub geralmente exige vários cliques manuais pela interface web do GitHub.",
       solution:
-        "A search-first React app that calls the GitHub REST API directly from the browser for a given username and renders profile and repository information in a single view.",
+        "Um app React focado em busca que chama a API REST do GitHub diretamente do navegador para um nome de usuário informado e renderiza as informações de perfil e repositórios em uma única visão.",
       architecture:
-        "A client-side React app calling the GitHub REST API directly — no custom backend needed for read-only public data.",
+        "Um app React no lado do cliente que chama diretamente a API REST do GitHub — sem necessidade de backend próprio para dados públicos somente leitura.",
       challenges: [
-        "Handling GitHub's public API rate limits gracefully for unauthenticated requests",
-        "Designing clear loading/empty/error states for a search-first UI",
+        "Lidar de forma elegante com os limites de taxa da API pública do GitHub para requisições não autenticadas",
+        "Projetar estados claros de carregamento/vazio/erro para uma interface focada em busca",
       ],
       learnings: [
-        "Working directly against a real public REST API rather than a mocked dataset",
-        "UI patterns for a fast, single-purpose search tool",
+        "Trabalhar diretamente com uma API REST pública real, em vez de um conjunto de dados simulado",
+        "Padrões de interface para uma ferramenta de busca rápida e de propósito único",
       ],
       gallery: [],
     },
@@ -183,13 +184,13 @@ const projectsData: ProjectInput[] = [
     slug: "steroid-manager",
     title: "Steroid Manager",
     tagline:
-      "Full-stack inventory, sales, and profit-tracking system for a retail shop.",
+      "Sistema full-stack de controle de estoque, vendas e lucro para uma loja de varejo.",
     category: "web",
     featured: true,
     year: 2023,
     cover: {
       src: "/images/projects/steroid-manager.png",
-      alt: "Steroid Manager dashboard showing product registration and sales tracking screens",
+      alt: "Painel do Steroid Manager mostrando as telas de cadastro de produtos e acompanhamento de vendas",
     },
     stack: ["Node.js", "Express", "MongoDB", "Bootstrap"],
     links: [
@@ -200,21 +201,21 @@ const projectsData: ProjectInput[] = [
       },
     ],
     summary:
-      "An MVC web app covering a retail shop's full sales lifecycle: product registration, cart and checkout with discounts, order cancellation, and profit/expense reporting.",
+      "Uma aplicação web MVC que cobre todo o ciclo de vendas de uma loja de varejo: cadastro de produtos, carrinho e checkout com descontos, cancelamento de pedidos e relatórios de lucro/despesas.",
     caseStudy: {
       problem:
-        "Small retail-shop operations often run on spreadsheets, making inventory, sales, and profit tracking error-prone and disconnected.",
+        "Operações de pequenas lojas de varejo costumam rodar em planilhas, o que torna o controle de estoque, vendas e lucro propenso a erros e desconectado.",
       solution:
-        "An MVC web application covering the full retail loop: product registration, a shopping cart and checkout flow with discount support, order confirmation/cancellation, and financial reporting on sales and profit.",
+        "Uma aplicação web MVC que cobre todo o ciclo do varejo: cadastro de produtos, um fluxo de carrinho e checkout com suporte a descontos, confirmação/cancelamento de pedidos e relatórios financeiros de vendas e lucro.",
       architecture:
-        "Node.js + Express backend following an MVC pattern, MongoDB for persistence, and a Bootstrap-based frontend — built as coursework for a Programming Language Paradigms course.",
+        "Backend em Node.js + Express seguindo o padrão MVC, MongoDB para persistência e um frontend baseado em Bootstrap — desenvolvido como trabalho da disciplina de Paradigmas de Linguagens de Programação.",
       challenges: [
-        "Modeling the full sales lifecycle (cart → discount → checkout → cancellation) consistently as MongoDB documents",
-        "Keeping controllers thin, with profit/expense calculations isolated and testable within the MVC structure",
+        "Modelar todo o ciclo de vendas (carrinho → desconto → checkout → cancelamento) de forma consistente como documentos MongoDB",
+        "Manter os controllers enxutos, com os cálculos de lucro/despesa isolados e testáveis dentro da estrutura MVC",
       ],
       learnings: [
-        "End-to-end MVC design for a real transactional domain, not just CRUD",
-        "Practical MongoDB schema design for order/inventory relationships",
+        "Design MVC de ponta a ponta para um domínio transacional real, não apenas CRUD",
+        "Modelagem prática de esquemas MongoDB para relações entre pedidos e estoque",
       ],
       gallery: [],
     },
@@ -222,73 +223,73 @@ const projectsData: ProjectInput[] = [
   {
     slug: "barbearia-dignissimo",
     title: "Barbearia Dignissimo",
-    tagline: "Online booking site for a premium barbershop brand.",
+    tagline: "Site de agendamento online para uma marca premium de barbearia.",
     category: "web",
     featured: true,
     year: 2024,
     cover: {
       src: "/images/projects/barbearia-dignissimo.png",
-      alt: "Barbearia Dignissimo landing page with an online appointment booking call-to-action",
+      alt: "Página inicial da Barbearia Dignissimo com uma chamada para ação de agendamento online",
     },
     stack: ["React", "CSS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://dignified-cut.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A branded marketing site with service listings and an online scheduling flow for a premium barbershop's haircut and grooming services.",
+      "Um site de marketing com identidade própria, listagem de serviços e um fluxo de agendamento online para os serviços de corte e cuidados de uma barbearia premium.",
     caseStudy: {
       problem:
-        "A barbershop needed a digital storefront so clients could discover services and book appointments without a phone call.",
+        "Uma barbearia precisava de uma vitrine digital para que os clientes pudessem conhecer os serviços e agendar horários sem precisar ligar.",
       solution:
-        'A branded marketing site with clear service listings and an "Agende Online" scheduling call-to-action for premium haircut and grooming services.',
+        'Um site de marketing com identidade própria, listagem clara de serviços e uma chamada para ação "Agende Online" para os serviços premium de corte e cuidados.',
       architecture:
-        "A front-end booking site focused on brand presentation, responsive layout, and a clear scheduling call-to-action.",
+        "Um site de agendamento front-end focado na apresentação da marca, em um layout responsivo e em uma chamada para ação de agendamento clara.",
       challenges: [
-        "Translating a premium brand identity into a clean, mobile-friendly booking flow",
+        "Traduzir uma identidade de marca premium em um fluxo de agendamento limpo e adaptado para dispositivos móveis",
       ],
       learnings: [
-        "Building a real, usable product for a small business rather than a generic template site",
+        "Construir um produto real e utilizável para um pequeno negócio, em vez de um site de template genérico",
       ],
       gallery: [],
     },
   },
   {
     slug: "student-registration-system",
-    title: "Student Registration System",
-    tagline: "Student registration with automatic grade-average calculation.",
+    title: "Sistema de Cadastro de Alunos",
+    tagline: "Cadastro de alunos com cálculo automático da média de notas.",
     category: "web",
     featured: true,
     year: 2023,
     cover: {
       src: "/images/projects/student-registration-system.png",
-      alt: "Student registration form with enrollment number, name, two grades, and calculated average",
+      alt: "Formulário de cadastro de alunos com número de matrícula, nome, duas notas e a média calculada",
     },
     stack: ["JavaScript", "HTML", "CSS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://cadastro-de-alunos-blush.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A registration form capturing student ID, name, and two grades, with the overall average calculated and displayed automatically on submission.",
+      "Um formulário de cadastro que registra a matrícula do aluno, o nome e duas notas, com a média geral calculada e exibida automaticamente ao enviar.",
     caseStudy: {
       problem:
-        "Manually tracking student enrollment numbers, names, and grades — and computing averages by hand — doesn't scale even for a single classroom.",
+        "Controlar manualmente matrículas, nomes e notas de alunos — e calcular médias à mão — não escala nem mesmo para uma única turma.",
       solution:
-        "A registration form capturing student ID, name, and two grades, with the overall average calculated and displayed automatically on submission.",
+        "Um formulário de cadastro que registra a matrícula do aluno, o nome e duas notas, com a média geral calculada e exibida automaticamente ao enviar.",
       architecture:
-        "A form-driven CRUD web app: client-side form handling and validation, with average calculation and persisted student records.",
+        "Uma aplicação web CRUD orientada a formulários: manipulação e validação de formulário no lado do cliente, com cálculo de média e registros de alunos persistidos.",
       challenges: [
-        "Keeping the grade-calculation logic correct and consistent with the registration form",
+        "Manter a lógica de cálculo de notas correta e consistente com o formulário de cadastro",
       ],
       learnings: [
-        "Solid fundamentals: form validation, CRUD flows, and simple derived-data calculations end to end",
+        "Fundamentos sólidos: validação de formulário, fluxos CRUD e cálculos simples de dados derivados de ponta a ponta",
       ],
       gallery: [],
     },
@@ -301,287 +302,290 @@ const projectsData: ProjectInput[] = [
     slug: "pomo",
     title: "Pomo",
     tagline:
-      "Pomodoro-timer web app built during an AWS/React scholarship challenge.",
+      "Aplicação web de timer pomodoro construída durante um desafio de bolsa AWS/React.",
     category: "application",
     archived: true,
     year: 2024,
     cover: {
       src: "/images/projects/pomo.png",
-      alt: "Pomo pomodoro timer application interface",
+      alt: "Interface da aplicação de timer pomodoro Pomo",
     },
     stack: ["React", "AWS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://desafio-01-aws-react-one.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A pomodoro-timer app built as a challenge project during the Compass UOL scholarship program.",
+      "Uma aplicação de timer pomodoro construída como projeto de desafio durante o programa de bolsas da Compass UOL.",
   },
   {
     slug: "gitwiki",
     title: "GitWiki",
-    tagline: "A Git/GitHub reference wiki.",
+    tagline: "Uma wiki de referência sobre Git/GitHub.",
     category: "web",
     archived: true,
     year: 2023,
     cover: {
       src: "/images/projects/gitwiki.png",
-      alt: "GitWiki reference site interface",
+      alt: "Interface do site de referência GitWiki",
     },
     stack: ["JavaScript", "HTML", "CSS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://git-wiki-beta.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A reference/documentation-style site for Git and GitHub concepts.",
+      "Um site de referência/documentação para conceitos de Git e GitHub.",
   },
   {
     slug: "first-portfolio",
-    title: "First Portfolio",
-    tagline: "My first developer portfolio site.",
+    title: "Primeiro Portfólio",
+    tagline: "Meu primeiro site de portfólio como desenvolvedor.",
     category: "web",
     archived: true,
     year: 2022,
     cover: {
       src: "/images/projects/first-portfolio.png",
-      alt: "Screenshot of an early personal portfolio website",
+      alt: "Captura de tela de um dos primeiros sites de portfólio pessoal",
     },
     stack: ["JavaScript", "HTML", "CSS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://fidel7z.github.io/js-developer-portfolio/",
         kind: "live",
       },
     ],
     summary:
-      "The original personal portfolio site — kept as a marker of where this all started.",
+      "O site de portfólio pessoal original — mantido como um marco de onde tudo começou.",
   },
   {
     slug: "pokedex",
     title: "Pokedex",
-    tagline: 'Pokémon browser with paginated "Load More" fetching.',
+    tagline: 'Navegador de Pokémon com busca paginada via "Load More".',
     category: "web",
     archived: true,
     year: 2023,
     cover: {
       src: "/images/projects/pokedex.png",
-      alt: "Pokedex web app listing Pokémon with a Load More button",
+      alt: "Aplicação web Pokedex listando Pokémon com um botão Load More",
     },
     stack: ["JavaScript", "PokeAPI"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://poke-generator-beta.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A Pokémon browser consuming the public PokeAPI with incremental pagination.",
+      "Um navegador de Pokémon que consome a PokeAPI pública com paginação incremental.",
   },
   {
     slug: "spider-man-multiverse",
     title: "Spider-Man Multiverse",
-    tagline: "Fan site exploring Spider-Man across three film actors.",
+    tagline:
+      "Site de fã explorando o Homem-Aranha através de três atores do cinema.",
     category: "web",
     archived: true,
     year: 2023,
     cover: {
       src: "/images/projects/spider-man-multiverse.png",
-      alt: "Spider-Man Multiverse fan site with cards for three actors",
+      alt: "Site de fã Spider-Man Multiverse com cards para três atores",
     },
     stack: ["JavaScript", "HTML", "CSS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://multiverso-spider-man-eight.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A front-end practice project: a Spider-Man fan site covering Maguire, Holland, and Garfield.",
+      "Um projeto de prática front-end: um site de fã do Homem-Aranha cobrindo Maguire, Holland e Garfield.",
   },
   {
     slug: "star-wars-workshop",
-    title: "Star Wars Site",
-    tagline: "Star Wars fan site built during a front-end workshop.",
+    title: "Site Star Wars",
+    tagline:
+      "Site de fã de Star Wars construído durante um workshop de front-end.",
     category: "web",
     archived: true,
     year: 2023,
     cover: {
       src: "/images/projects/star-wars-workshop.png",
-      alt: "Star Wars fan site with character database",
+      alt: "Site de fã de Star Wars com banco de dados de personagens",
     },
     stack: ["JavaScript", "HTML", "CSS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://workshop-frontend-2023-2-xi.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A front-end workshop project featuring a Star Wars characters database.",
+      "Um projeto de workshop de front-end com um banco de dados de personagens de Star Wars.",
   },
   {
     slug: "noticia-cidade",
     title: "Notícia Cidade",
-    tagline: "News-portal UI practice project.",
+    tagline: "Projeto de prática de interface para portal de notícias.",
     category: "web",
     archived: true,
     year: 2023,
     cover: {
       src: "/images/projects/noticia-cidade.png",
-      alt: "Notícia Cidade news portal homepage",
+      alt: "Página inicial do portal de notícias Notícia Cidade",
     },
     stack: ["JavaScript", "HTML", "CSS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://noticias-cidade-three.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A Portuguese-language news-portal UI clone, built for front-end practice.",
+      "Um clone de interface de portal de notícias em português, construído para prática de front-end.",
   },
   {
     slug: "spotify-clone",
-    title: "Spotify Clone",
-    tagline: "Spotify marketing landing-page clone.",
+    title: "Clone do Spotify",
+    tagline: "Clone da landing page de marketing do Spotify.",
     category: "web",
     archived: true,
     year: 2022,
     cover: {
       src: "/images/projects/spotify-clone.png",
-      alt: "Spotify landing page clone",
+      alt: "Clone da landing page do Spotify",
     },
     stack: ["HTML", "CSS", "JavaScript"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://spotify-clone-steel-nine.vercel.app/",
         kind: "live",
       },
     ],
-    summary: "A pixel-practice clone of Spotify's marketing landing page.",
+    summary:
+      "Um clone pixel a pixel da landing page de marketing do Spotify, feito para prática.",
   },
   {
     slug: "yu-gi-oh-site",
-    title: "Yu-Gi-Oh! Site",
-    tagline: "Fan site with a Yu-Gi-Oh! card catalog.",
+    title: "Site Yu-Gi-Oh!",
+    tagline: "Site de fã com um catálogo de cartas de Yu-Gi-Oh!.",
     category: "web",
     archived: true,
     year: 2022,
     cover: {
       src: "/images/projects/yu-gi-oh-site.png",
-      alt: "Yu-Gi-Oh! fan site card catalog",
+      alt: "Catálogo de cartas do site de fã de Yu-Gi-Oh!",
     },
     stack: ["HTML", "CSS", "JavaScript"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://yu-gi-oh-site.vercel.app/#cartas",
         kind: "live",
       },
     ],
     summary:
-      "A Yu-Gi-Oh! fan site combining franchise information with a trading-card catalog.",
+      "Um site de fã de Yu-Gi-Oh! combinando informações da franquia com um catálogo de cartas colecionáveis.",
   },
   {
     slug: "finans",
     title: "Finans",
-    tagline: "Personal-finance landing-page UI clone.",
+    tagline: "Clone de interface de landing page de finanças pessoais.",
     category: "web",
     archived: true,
     year: 2022,
     cover: {
       src: "/images/projects/finans.png",
-      alt: "Finans personal finance landing page",
+      alt: "Landing page de finanças pessoais Finans",
     },
     stack: ["HTML", "CSS", "JavaScript"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://finan-as-gamma.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A personal-finance product landing page, built for UI/layout practice.",
+      "Uma landing page de produto de finanças pessoais, construída para prática de interface/layout.",
   },
   {
     slug: "calculadora",
     title: "Calculadora",
-    tagline: "Basic arithmetic calculator app.",
+    tagline: "Aplicativo de calculadora aritmética básica.",
     category: "application",
     archived: true,
     year: 2022,
     cover: {
       src: "/images/projects/calculadora.png",
-      alt: "Calculator app with a numeric keypad",
+      alt: "Aplicativo de calculadora com teclado numérico",
     },
     stack: ["JavaScript", "HTML", "CSS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://app-calculadora-blond.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A straightforward arithmetic calculator — a JavaScript fundamentals exercise.",
+      "Uma calculadora aritmética simples — um exercício de fundamentos de JavaScript.",
   },
   {
     slug: "mata-mosquito",
     title: "Mata Mosquito",
-    tagline: "Browser mini-game with difficulty tiers.",
+    tagline: "Minigame de navegador com níveis de dificuldade.",
     category: "application",
     archived: true,
     year: 2022,
     cover: {
       src: "/images/projects/mata-mosquito.png",
-      alt: "Mata Mosquito browser game difficulty selection screen",
+      alt: "Tela de seleção de dificuldade do jogo de navegador Mata Mosquito",
     },
     stack: ["JavaScript", "HTML", "CSS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://app-mata-mosquito-eight.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A small browser game with selectable difficulty tiers, built for game-logic practice.",
+      "Um pequeno jogo de navegador com níveis de dificuldade selecionáveis, construído para prática de lógica de jogos.",
   },
   {
     slug: "museu-nacional",
     title: "Museu Nacional",
-    tagline: "Museum website with exhibits, gallery, and visit booking.",
+    tagline: "Site de museu com exposições, galeria e agendamento de visitas.",
     category: "web",
     archived: true,
     year: 2023,
     cover: {
       src: "/images/projects/museu-nacional.png",
-      alt: "Museu Nacional website with exhibitions and visit booking",
+      alt: "Site do Museu Nacional com exposições e agendamento de visitas",
     },
     stack: ["JavaScript", "HTML", "CSS"],
     links: [
       {
-        label: "Live demo",
+        label: "Demonstração ao vivo",
         href: "https://museu-nacional-i6wn.vercel.app/",
         kind: "live",
       },
     ],
     summary:
-      "A museum website covering exhibitions, a photo gallery, and a visit-booking flow.",
+      "Um site de museu que reúne exposições, uma galeria de fotos e um fluxo de agendamento de visitas.",
   },
 ];
 

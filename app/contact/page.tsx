@@ -8,8 +8,8 @@ import { GitHubIcon, LinkedInIcon } from "@/components/layout/social-icons";
 import { FadeIn } from "@/components/motion/fade-in";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact",
-  description: `Get in touch with ${siteConfig.name} about Software Engineering and AI opportunities, collaborations, or freelance work.`,
+  title: "Contato",
+  description: `Entre em contato com ${siteConfig.name} sobre oportunidades em Engenharia de Software e IA, colaborações ou trabalhos freelance.`,
   path: "/contact",
 });
 
@@ -18,9 +18,9 @@ export default function ContactPage() {
     <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
       <FadeIn>
         <SectionHeading
-          eyebrow="Contact"
-          title="Let's talk"
-          description="Whether it's a role, a research collaboration, or a project — I read every message."
+          eyebrow="Contato"
+          title="Vamos conversar"
+          description="Seja uma vaga, uma colaboração em pesquisa ou um projeto — eu leio toda mensagem."
         />
       </FadeIn>
 

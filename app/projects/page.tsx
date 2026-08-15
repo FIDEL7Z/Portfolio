@@ -7,9 +7,9 @@ import { ArchiveList } from "@/components/projects/archive-list";
 import { FadeIn } from "@/components/motion/fade-in";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Projects",
+  title: "Projetos",
   description:
-    "A curated set of AI and web engineering projects, plus an archive of smaller practice builds.",
+    "Um conjunto selecionado de projetos de IA e engenharia web, além de um arquivo de builds menores de prática.",
   path: "/projects",
 });
 
@@ -21,9 +21,9 @@ export default function ProjectsPage() {
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
       <FadeIn>
         <SectionHeading
-          eyebrow="Portfolio"
-          title="Projects"
-          description="Curated engineering and AI work, filterable by category. Smaller practice builds live in the archive below."
+          eyebrow="Portfólio"
+          title="Projetos"
+          description="Trabalhos selecionados de engenharia e IA, filtráveis por categoria. Builds menores de prática ficam no arquivo abaixo."
         />
       </FadeIn>
 
@@ -33,10 +33,10 @@ export default function ProjectsPage() {
 
       {archived.length > 0 ? (
         <FadeIn className="mt-20">
-          <h2 className="text-lg font-medium">Other projects</h2>
+          <h2 className="text-lg font-medium">Outros projetos</h2>
           <p className="text-muted-foreground mt-1 text-sm">
-            Earlier practice builds and clones — kept for the record, not the
-            highlight reel.
+            Builds de prática e clones mais antigos — mantidos como registro,
+            não como destaque.
           </p>
           <div className="mt-6">
             <ArchiveList projects={archived} />

@@ -5,30 +5,30 @@ import {
 
 const siteConfigData: SiteConfig = {
   name: "Jefferson Fidelis",
-  role: "Software Engineer — AI-Focused Full-Stack",
-  title: "Jefferson Fidelis — Software Engineer, AI Systems",
+  role: "Engenheiro de Software — Full-Stack com foco em IA",
+  title: "Jefferson Fidelis — Engenheiro de Software, Sistemas de IA",
   description:
-    "Full-stack software engineer building AI-driven products — LLM applications, RAG pipelines, and real-time computer vision — end to end from architecture to production.",
+    "Engenheiro de software full-stack construindo produtos orientados a IA — aplicações com LLM, pipelines de RAG e visão computacional em tempo real — de ponta a ponta, da arquitetura à produção.",
   keywords: [
     "Jefferson Fidelis",
-    "Software Engineer",
-    "Full Stack Developer",
-    "Artificial Intelligence",
+    "Engenheiro de Software",
+    "Desenvolvedor Full Stack",
+    "Inteligência Artificial",
     "LLM",
     "RAG",
-    "Computer Vision",
-    "Machine Learning",
+    "Visão Computacional",
+    "Aprendizado de Máquina",
     "Next.js",
     "TypeScript",
   ],
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://jeffersonfidelis.dev",
-  location: "Natal, RN, Brazil",
+  location: "Natal, RN, Brasil",
   email: "junior.fidelis.3386@gmail.com",
   phone: "+55 (83) 99418-6006",
   bio: [
-    "Full-stack software engineer with four years of experience building scalable systems, APIs, and end-to-end web applications. Hands-on with Python, Node.js, Java, React, and Angular, with a growing focus on data-oriented architecture and service integration.",
-    "Consistent track record delivering AI-driven products — from LLM-powered applications and retrieval-augmented generation (RAG) pipelines to real-time computer vision systems — always tying the technology back to a concrete business or user problem rather than treating it as a demo.",
-    "Final-year Computer Science student with a solid foundation in data structures, algorithms, and software engineering practice. Analytical, delivery-oriented, and comfortable owning a problem from architecture through production.",
+    "Engenheiro de software full-stack com quatro anos de experiência construindo sistemas escaláveis, APIs e aplicações web de ponta a ponta. Atuo com Python, Node.js, Java, React e Angular, com foco crescente em arquitetura orientada a dados e integração de serviços.",
+    "Histórico consistente entregando produtos orientados a IA — de aplicações com LLM e pipelines de retrieval-augmented generation (RAG) a sistemas de visão computacional em tempo real — sempre conectando a tecnologia a um problema real de negócio ou de usuário, e não tratando como demonstração.",
+    "Estudante do último ano de Ciência da Computação, com base sólida em estruturas de dados, algoritmos e prática de engenharia de software. Analítico, orientado a entregas e confortável em assumir um problema da arquitetura até a produção.",
   ],
   social: {
     github: "https://github.com/FIDEL7Z",
@@ -36,10 +36,10 @@ const siteConfigData: SiteConfig = {
   },
   resumeHref: "/resume/jefferson-fidelis-resume.png",
   stats: [
-    { label: "Years of experience", value: "4+" },
-    { label: "Projects shipped", value: "20+" },
-    { label: "Companies collaborated with", value: "6" },
-    { label: "AI / Computer Vision projects", value: "3" },
+    { label: "Anos de experiência", value: "4+" },
+    { label: "Projetos entregues", value: "20+" },
+    { label: "Empresas em que atuei", value: "6" },
+    { label: "Projetos de IA / Visão Computacional", value: "3" },
   ],
 };
 

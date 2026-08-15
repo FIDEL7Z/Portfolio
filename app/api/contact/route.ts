@@ -10,7 +10,7 @@ export async function POST(request: Request) {
   if (!parsed.success) {
     return NextResponse.json(
       {
-        error: "Invalid submission.",
+        error: "Envio inválido.",
         issues: parsed.error.flatten().fieldErrors,
       },
       { status: 400 },
@@ -42,7 +42,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error:
-          "Contact form is not configured yet. Please email directly instead.",
+          "O formulário de contato ainda não está configurado. Envie um e-mail diretamente.",
       },
       { status: 503 },
     );
@@ -58,7 +58,7 @@ export async function POST(request: Request) {
 
   if (error) {
     return NextResponse.json(
-      { error: "Failed to send message." },
+      { error: "Falha ao enviar a mensagem." },
       { status: 502 },
     );
   }

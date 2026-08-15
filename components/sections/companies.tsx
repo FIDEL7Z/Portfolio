@@ -9,7 +9,7 @@ export function Companies() {
     <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <FadeIn>
         <p className="text-muted-foreground text-center font-mono text-sm">
-          Worked with teams at
+          Já trabalhei com times da
         </p>
       </FadeIn>
 

@@ -32,11 +32,11 @@ export function ContactForm() {
 
     if (!response.ok) {
       const data = await response.json().catch(() => null);
-      toast.error(data?.error ?? "Something went wrong. Please try again.");
+      toast.error(data?.error ?? "Algo deu errado. Tente novamente.");
       return;
     }
 
-    toast.success("Message sent — I'll get back to you soon.");
+    toast.success("Mensagem enviada — retorno em breve.");
     reset();
   }
 
@@ -55,11 +55,11 @@ export function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div className="space-y-1.5">
           <label htmlFor="name" className="text-sm font-medium">
-            Name
+            Nome
           </label>
           <Input
             id="name"
-            placeholder="Your name"
+            placeholder="Seu nome"
             aria-invalid={!!errors.name}
             {...register("name")}
           />
@@ -75,7 +75,7 @@ export function ContactForm() {
           <Input
             id="email"
             type="email"
-            placeholder="you@company.com"
+            placeholder="voce@empresa.com"
             aria-invalid={!!errors.email}
             {...register("email")}
           />
@@ -87,11 +87,11 @@ export function ContactForm() {
 
       <div className="space-y-1.5">
         <label htmlFor="message" className="text-sm font-medium">
-          Message
+          Mensagem
         </label>
         <Textarea
           id="message"
-          placeholder="What are you working on?"
+          placeholder="No que você está trabalhando?"
           rows={6}
           aria-invalid={!!errors.message}
           {...register("message")}
@@ -111,7 +111,7 @@ export function ContactForm() {
         ) : (
           <Send className="size-4" />
         )}
-        Send message
+        Enviar mensagem
       </Button>
     </form>
   );

@@ -9,10 +9,10 @@ import type {
 } from "@/lib/content/schemas/project.schema";
 
 const filters: { value: ProjectCategory | "all"; label: string }[] = [
-  { value: "all", label: "All" },
-  { value: "ai", label: "Artificial Intelligence" },
-  { value: "web", label: "Web Development" },
-  { value: "application", label: "Applications" },
+  { value: "all", label: "Todos" },
+  { value: "ai", label: "Inteligência Artificial" },
+  { value: "web", label: "Desenvolvimento Web" },
+  { value: "application", label: "Aplicações" },
 ];
 
 export function ProjectsExplorer({ projects }: { projects: Project[] }) {

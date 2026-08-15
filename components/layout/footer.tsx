@@ -49,7 +49,7 @@ export function Footer() {
           </a>
           <a
             href={`mailto:${siteConfig.email}`}
-            aria-label="Email"
+            aria-label="E-mail"
             className="text-muted-foreground hover:text-foreground"
           >
             <Mail className="size-5" />
@@ -58,7 +58,7 @@ export function Footer() {
       </div>
 
       <div className="border-border/60 text-muted-foreground border-t py-6 text-center text-xs">
-        © {new Date().getFullYear()} {siteConfig.name}. Built with Next.js,
+        © {new Date().getFullYear()} {siteConfig.name}. Construído com Next.js,
         TypeScript & Tailwind CSS.
       </div>
     </footer>

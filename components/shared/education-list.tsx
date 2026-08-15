@@ -12,7 +12,7 @@ export function EducationList({ items }: { items: Education[] }) {
         >
           <span className="bg-primary ring-background absolute top-1.5 -left-[29px] size-2.5 rounded-full ring-4 sm:-left-[37px]" />
           <p className="text-muted-foreground font-mono text-xs">
-            {item.startDate} — {item.endDate ?? "Present"}
+            {item.startDate} — {item.endDate ?? "Atual"}
           </p>
           <h3 className="mt-1 font-medium">{item.institution}</h3>
           <p className="text-muted-foreground mt-1 text-sm">

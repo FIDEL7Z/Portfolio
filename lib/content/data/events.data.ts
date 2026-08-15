@@ -3,104 +3,104 @@ import { eventSchema, type Event } from "@/lib/content/schemas/event.schema";
 const eventsData: Event[] = [
   {
     slug: "dataprev-farewell",
-    title: "Wrapping up my internship at Dataprev",
+    title: "Encerrando meu estágio na Dataprev",
     date: "2025-02-19",
     tag: "Dataprev",
     description:
-      "Closed out an important chapter today. My time at Dataprev pushed me forward technically and professionally, and gave me a much broader view of technology, data, and social impact through work on public-sector systems.",
+      "Fechei hoje um capítulo importante. Minha passagem pela Dataprev me impulsionou técnica e profissionalmente, e me deu uma visão muito mais ampla sobre tecnologia, dados e impacto social através do trabalho em sistemas do setor público.",
     image: {
       src: "/images/events/dataprev-encerramento.jpeg",
-      alt: "Farewell moment at the end of the Dataprev internship",
+      alt: "Momento de despedida ao final do estágio na Dataprev",
     },
     href: "https://www.linkedin.com/posts/jefferson-fidelis-16bb091b1_hoje-eu-encerro-um-ciclo-muito-importante-activity-7431130833350070273-SuZG",
   },
   {
     slug: "compass-uol-journey",
-    title: "Wrapping up the Compass UOL scholarship program",
+    title: "Encerrando o programa de bolsas da Compass UOL",
     date: "2025-01-08",
     tag: "Compass UOL",
     description:
-      "Closed out my time in the Compass UOL training program with gratitude. Since August 2024 I learned and grew across agile methodologies, React, AWS, and web security — a genuinely transformative experience.",
+      "Encerrei com gratidão minha passagem pelo programa de formação da Compass UOL. Desde agosto de 2024, aprendi e evoluí em metodologias ágeis, React, AWS e segurança web — uma experiência genuinamente transformadora.",
     image: {
       src: "/images/events/compass-uol-jornada.jpg",
-      alt: "Compass UOL scholarship program graduation moment",
+      alt: "Momento de formatura do programa de bolsas da Compass UOL",
     },
     href: "https://www.linkedin.com/feed/update/urn:li:activity:7282848832428650496/",
   },
   {
     slug: "dataprev-anniversary",
-    title: "Celebrating with the Dataprev team",
+    title: "Comemorando com o time da Dataprev",
     date: "2024-04-17",
     tag: "Dataprev",
     description:
-      "Grateful to be part of such a great team — celebrating another year, and the friendships that made every day at Dataprev better.",
+      "Grato por fazer parte de um time tão bom — comemorando mais um ano, e as amizades que tornaram cada dia na Dataprev melhor.",
     image: {
       src: "/images/events/dataprev-aniversario.jpg",
-      alt: "Birthday celebration with the Dataprev team",
+      alt: "Comemoração de aniversário com o time da Dataprev",
     },
     href: "https://www.linkedin.com/feed/update/urn:li:activity:7186685115157147648/",
   },
   {
     slug: "academic-cv-project",
-    title: "Academic project: real-time computer vision",
+    title: "Projeto acadêmico: visão computacional em tempo real",
     date: "2024-06-03",
-    tag: "Academic",
+    tag: "Acadêmico",
     description:
-      "Wrapped up an academic project in image processing and computer vision — a real-time object and person detection system built with YOLOv4 on the Darknet framework. (See the full write-up under AI Lab → Real-Time Object Detection.)",
+      "Concluí um projeto acadêmico de processamento de imagens e visão computacional — um sistema de detecção de objetos e pessoas em tempo real construído com YOLOv4 no framework Darknet. (Veja o case completo em AI Lab → Detecção de Objetos em Tempo Real.)",
     image: {
       src: "/images/events/projeto-academico.png",
-      alt: "Presentation of the real-time object detection academic project",
+      alt: "Apresentação do projeto acadêmico de detecção de objetos em tempo real",
     },
     href: "https://www.linkedin.com/feed/update/urn:li:activity:7203547060195725312/",
   },
   {
     slug: "dataprev-interns",
-    title: "Proud of the Dataprev interns team",
+    title: "Orgulho do time de estagiários da Dataprev",
     date: "2024-06-11",
     tag: "Dataprev",
     description:
-      "Proud to work with a team that's always ready to learn and make a difference.",
+      "Orgulho de trabalhar com um time sempre pronto para aprender e fazer a diferença.",
     image: {
       src: "/images/events/dataprev-estagiarios.png",
-      alt: "Group photo of the Dataprev interns team",
+      alt: "Foto em grupo do time de estagiários da Dataprev",
     },
   },
   {
     slug: "pm-delivery-2023",
-    title: "Delivering the sentiment-analysis project for the Military Police",
+    title: "Entrega do projeto de análise de sentimento para a Polícia Militar",
     date: "2023-12-04",
     tag: "Fábrica de Software",
     description:
-      "Final delivery day for the sentiment-analysis project built in partnership with the João Pessoa Military Police — three months of work from the Fábrica de Software × UNIPÊ 2023.2 team.",
+      "Dia da entrega final do projeto de análise de sentimento construído em parceria com a Polícia Militar de João Pessoa — três meses de trabalho da equipe Fábrica de Software × UNIPÊ 2023.2.",
     image: {
       src: "/images/events/entrega-pm.jpeg",
-      alt: "Delivery of the sentiment-analysis project to the Military Police",
+      alt: "Entrega do projeto de análise de sentimento para a Polícia Militar",
     },
     href: "https://www.linkedin.com/posts/jefferson-fidelis-16bb091b1_inovaaexaeto-tecnologia-impactosocial-activity-7137609327263002624-xzfP",
   },
   {
     slug: "team-sensilog-2023",
-    title: "Team Sensilog — project delivery day",
+    title: "Equipe Sensilog — dia de entrega do projeto",
     date: "2023-12-04",
     tag: "Sensilog",
     description:
-      "The Sensilog team from Fábrica de Software after finishing the PMJP partnership project.",
+      "A equipe Sensilog da Fábrica de Software após concluir o projeto em parceria com a PMJP.",
     image: {
       src: "/images/events/team-sensilog.jpeg",
-      alt: "The Sensilog team on project delivery day",
+      alt: "A equipe Sensilog no dia de entrega do projeto",
     },
     href: "https://www.linkedin.com/posts/caiiohenryk_essa-semana-n%C3%B3s-da-equipe-sensilog-da-f%C3%A1brica-ugcPost-7138307848148627456-Dn_h",
   },
   {
     slug: "sao-braz-farewell",
-    title: "Last day at São Braz",
+    title: "Último dia na São Braz",
     date: "2022-07-04",
     tag: "São Braz",
     description:
-      "Last day at São Braz alongside an incredible IT team — unforgettable teamwork and mutual learning. Different paths ahead, but a lasting friendship.",
+      "Último dia na São Braz ao lado de um time de TI incrível — trabalho em equipe e aprendizado mútuo inesquecíveis. Caminhos diferentes pela frente, mas uma amizade duradoura.",
     image: {
       src: "/images/events/sao-braz-despedida.jpeg",
-      alt: "Farewell moment with the São Braz IT team",
+      alt: "Momento de despedida com o time de TI da São Braz",
     },
     href: "https://www.linkedin.com/posts/jefferson-fidelis-16bb091b1_gratidaeto-aprendizado-experiaeanciaincraedvel-activity-7080604581944057857-5332",
   },

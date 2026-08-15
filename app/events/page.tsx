@@ -6,9 +6,9 @@ import { EventCard } from "@/components/events/event-card";
 import { StaggerItem, StaggerList } from "@/components/motion/stagger-list";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Events",
+  title: "Eventos",
   description:
-    "Career milestones — internships, deliveries, and team moments along the way.",
+    "Marcos de carreira — estágios, entregas e momentos de equipe ao longo do caminho.",
   path: "/events",
 });
 
@@ -18,9 +18,9 @@ export default function EventsPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
       <SectionHeading
-        eyebrow="Events"
-        title="Career milestones"
-        description="Internships wrapping up, projects shipped, teams celebrated — the moments behind the résumé."
+        eyebrow="Eventos"
+        title="Marcos de carreira"
+        description="Estágios encerrados, projetos entregues, equipes celebradas — os momentos por trás do currículo."
       />
 
       <StaggerList className="mt-10 grid gap-6 sm:grid-cols-2">

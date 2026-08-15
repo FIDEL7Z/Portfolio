@@ -7,21 +7,21 @@ import { FadeIn } from "@/components/motion/fade-in";
 const pillars = [
   {
     icon: Bot,
-    title: "LLMs & Agents",
+    title: "LLMs & Agentes",
     description:
-      "Multi-agent orchestration with CrewAI, RAG pipelines, and LLM fine-tuning for domain-specific applications.",
+      "Orquestração multi-agente com CrewAI, pipelines de RAG e fine-tuning de LLMs para aplicações específicas de domínio.",
   },
   {
     icon: Eye,
-    title: "Computer Vision",
+    title: "Visão Computacional",
     description:
-      "Real-time detection and gesture-based interaction with YOLO, OpenCV, and MediaPipe.",
+      "Detecção em tempo real e interação baseada em gestos com YOLO, OpenCV e MediaPipe.",
   },
   {
     icon: Sparkles,
-    title: "Applied, not academic",
+    title: "Aplicado, não acadêmico",
     description:
-      "Every AI project ties back to a concrete workflow or interface — not a standalone notebook.",
+      "Todo projeto de IA está conectado a um fluxo de trabalho ou interface concreta — não é um notebook isolado.",
   },
 ];
 
@@ -31,9 +31,9 @@ export function AISpotlight() {
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <FadeIn>
           <SectionHeading
-            eyebrow="AI Lab"
-            title="Where AI meets production engineering"
-            description="LLMs, retrieval-augmented generation, and computer vision — explored as engineering problems with real interfaces, not isolated experiments."
+            eyebrow="Laboratório de IA"
+            title="Onde IA encontra engenharia de produção"
+            description="LLMs, retrieval-augmented generation e visão computacional — explorados como problemas de engenharia com interfaces reais, não experimentos isolados."
           />
         </FadeIn>
 
@@ -53,7 +53,7 @@ export function AISpotlight() {
 
         <FadeIn delay={0.2} className="mt-10">
           <Button nativeButton={false} render={<Link href="/ai" />}>
-            Explore the AI Lab
+            Explorar o Laboratório de IA
             <ArrowRight className="size-4" />
           </Button>
         </FadeIn>

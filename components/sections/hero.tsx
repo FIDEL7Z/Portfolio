@@ -10,10 +10,10 @@ import { useTypingEffect } from "@/hooks/use-typing-effect";
 import { GitHubIcon, LinkedInIcon } from "@/components/layout/social-icons";
 
 const ROLES = [
-  "Software Engineer",
-  "AI / ML Engineer",
-  "Full-Stack Developer",
-  "Computer Vision Enthusiast",
+  "Engenheiro de Software",
+  "Engenheiro de IA / ML",
+  "Desenvolvedor Full-Stack",
+  "Entusiasta de Visão Computacional",
 ] as const;
 
 export function Hero() {
@@ -29,7 +29,7 @@ export function Hero() {
           className="border-border bg-secondary/60 text-muted-foreground inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs"
         >
           <span className="size-1.5 rounded-full bg-emerald-500" />
-          Open to Software Engineering &amp; AI roles
+          Aberto a oportunidades em Engenharia de Software &amp; IA
         </motion.div>
 
         <motion.h1
@@ -72,7 +72,7 @@ export function Hero() {
             nativeButton={false}
             render={<Link href="/projects" />}
           >
-            View Work
+            Ver Projetos
             <ArrowRight className="size-4" />
           </Button>
           <Button
@@ -82,7 +82,7 @@ export function Hero() {
             render={<a href={siteConfig.resumeHref} download />}
           >
             <Download className="size-4" />
-            Download Resume
+            Baixar Currículo
           </Button>
         </motion.div>
 

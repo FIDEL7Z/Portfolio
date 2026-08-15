@@ -56,7 +56,7 @@ export function Header() {
             nativeButton={false}
             render={<a href={siteConfig.resumeHref} download />}
           >
-            Resume
+            Currículo
           </Button>
         </div>
 
@@ -65,7 +65,7 @@ export function Header() {
           <Sheet>
             <SheetTrigger
               render={
-                <Button variant="ghost" size="icon" aria-label="Open menu" />
+                <Button variant="ghost" size="icon" aria-label="Abrir menu" />
               }
             >
               <Menu className="size-5" />

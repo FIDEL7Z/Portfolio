@@ -1,8 +1,8 @@
 export const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/ai", label: "AI Lab" },
-  { href: "/resume", label: "Resume" },
-  { href: "/events", label: "Events" },
-  { href: "/contact", label: "Contact" },
+  { href: "/", label: "Início" },
+  { href: "/projects", label: "Projetos" },
+  { href: "/ai", label: "Laboratório de IA" },
+  { href: "/resume", label: "Currículo" },
+  { href: "/events", label: "Eventos" },
+  { href: "/contact", label: "Contato" },
 ] as const;
